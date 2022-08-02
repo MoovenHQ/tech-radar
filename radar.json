@@ -75,5 +75,5 @@
         "quadrant": "platforms",
         "isNew": "FALSE",
         "description": "Elastic Beanstalk has been replaced by S3+Cloudfront as our front-end hosting stack for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1762328588/Replace+Elastic+BeanStalk+infrastructure"
-    },
+    }
 ]
