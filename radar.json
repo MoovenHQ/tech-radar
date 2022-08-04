@@ -1,17 +1,17 @@
 [
     {
-        "name": "Typescript",
+        "name": "TypeScript",
         "ring": "adopt",
         "quadrant": "languages & frameworks",
         "isNew": "FALSE",
-        "description": "Due to the rising popularity of Typescript (see https://octoverse.github.com/#top-languages-over-the-years) and the type-safety and other advantages it provides compared to Javascript we have moved to adopt it. \n This means any new services should be written in Typescript and if any major changes are undertaken on an existing Javascript code base, the introduction of Typescript should be considered at that time"
+        "description": "Due to the rising popularity of TypeScript (see https://octoverse.github.com/#top-languages-over-the-years) and the type-safety and other advantages it provides compared to Javascript we have moved to adopt it. \n This means any new services should be written in TypeScript and if any major changes are undertaken on an existing Javascript code base, the introduction of TypeScript should be considered at that time"
     },
     {
         "name": "Node.js",
         "ring": "adopt",
         "quadrant": "languages & frameworks",
         "isNew": "FALSE",
-        "description": "Complementing our adoption with Typescript, the fact we don't have very high performance/throughput considerations, and influenced by the fact that front-end developers could more easily contribute to Node.js+Typescript code bases: we have adopted Node.js for backend services. \n This means any new services should be written in Node.js"
+        "description": "Complementing our adoption with TypeScript, the fact we don't have very high performance/throughput considerations, and influenced by the fact that front-end developers could more easily contribute to Node.js+TypeScript code bases: we have adopted Node.js for backend services. \n This means any new services should be written in Node.js"
     },
     {
         "name": "Bitbucket pipelines",
@@ -60,7 +60,7 @@
         "ring": "hold",
         "quadrant": "languages & frameworks",
         "isNew": "FALSE",
-        "description": "Due to our adoption of Typescript, no new components should be created using Javascript. Existing codebases are not actively being migrated, however, if significant changes are being made to an existing Javascript code base the introduction of Typescript should be considered at that time"
+        "description": "Due to our adoption of TypeScript, no new components should be created using Javascript. Existing codebases are not actively being migrated, however, if significant changes are being made to an existing Javascript code base the introduction of TypeScript should be considered at that time"
     },
     {
         "name": "AWS Codebuild",
