@@ -1,30 +1,86 @@
 [
     {
-        "name": "Composer",
+        "name": "TypeScript",
         "ring": "adopt",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "description": "Although the idea of dependency management ..."
+        "quadrant": "languages & frameworks",
+        "isNew": "FALSE",
+        "description": "Due to the rising popularity of TypeScript (see https://octoverse.github.com/#top-languages-over-the-years) and the type-safety and other advantages it provides compared to Javascript we have moved to adopt it. \n This means any new services should be written in TypeScript and if any major changes are undertaken on an existing Javascript code base, the introduction of TypeScript should be considered at that time"
     },
     {
-        "name": "Canary builds",
-        "ring": "trial",
+        "name": "Node.js",
+        "ring": "adopt",
+        "quadrant": "languages & frameworks",
+        "isNew": "FALSE",
+        "description": "Complementing our adoption with TypeScript, the fact we don't have very high performance/throughput considerations, and influenced by the fact that front-end developers could more easily contribute to Node.js+TypeScript code bases: we have adopted Node.js for backend services. \n This means any new services should be written in Node.js"
+    },
+    {
+        "name": "Bitbucket pipelines",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "description": "We feel CI tools which are integrated with our source control are a superior developer experience (as developers do not need to authenticate into the AWS console for pipeline visibility) we have moved to adopt Bitbucket pipelines. We are actively replacing any Codebuild pipelines with Bitbucket pipeline equivalents"
+    },
+    {
+        "name": "Feature leading",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "description": "Due to the size and seniority of our team, and our relatively constrained product management capacity we have adopted a Feature lead model as described in this wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1835859983/Feature+Leading"
+    },
+    {
+        "name": "Feature flags",
+        "ring": "adopt",
         "quadrant": "techniques",
         "isNew": "FALSE",
-        "description": "Many projects have external code dependencies ..."
+        "description": "To assist in managing blast radius and providing flexibility to product managers and marketers so they can run early access programmes and determine release strategy we have adopted feature flags as a technique: https://mooven.atlassian.net/wiki/spaces/MT/pages/1717502138/Implement+feature+flags+in+the+platform+and+portal"
     },
     {
-        "name": "Apache Kylin",
-        "ring": "assess",
-        "quadrant": "platforms",
+        "name": "Playwright for E2E testing",
+        "ring": "trial",
+        "quadrant": "tools",
         "isNew": "TRUE",
-        "description": "Apache Kylin is an open source analytics solution ..."
+        "description": "Due to our desire to do some automated e2e testing and some experience within the team with Playright we have moved to trial Playright as our tool for automated e2e testing: https://mooven.atlassian.net/wiki/spaces/MT/pages/1816330241/E2E+testing+strategy"
     },
     {
-        "name": "JSF",
+        "name": "Chromatic + Storybook",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "description": "We wish to heavily use visual regression testing as a technique and have chosen Chromatic and Storybook as tooling to support this: https://mooven.atlassian.net/wiki/spaces/MT/pages/1812365319/UI+Testing+Strategy"
+    },
+    {
+        "name": "Use low-code tooling for Admin functionality",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "description": "To decrease the amount of front-end engineering time that is needed to support CS and other non-product team members activities, we are exploring low-code tooling to support administration functions as described in the wiki: https://mooven.atlassian.net/wiki/spaces/MT/pages/1817575463/Use+low-code+tooling+for+Admin+functionality"
+    },
+    {
+        "name": "Javascript",
         "ring": "hold",
         "quadrant": "languages & frameworks",
         "isNew": "FALSE",
-        "description": "We continue to see teams run into trouble using JSF ..."
+        "description": "Due to our adoption of TypeScript, no new components should be created using Javascript. Existing codebases are not actively being migrated, however, if significant changes are being made to an existing Javascript code base the introduction of TypeScript should be considered at that time"
+    },
+    {
+        "name": "AWS Codebuild",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "description": "Because of our adoption of a CI-in-source-control tools (in our case, Bitbucket pipelines) we are actively replacing any Codebuild pipelines with Bitbucket pipeline equivalents"
+    },
+    {
+        "name": "AWS Elastic Beanstalk",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "description": "Elastic Beanstalk has been replaced by S3+Cloudfront as our front-end hosting stack for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1762328588/Replace+Elastic+BeanStalk+infrastructure"
+    },
+    {
+        "name": "S3 + Cloudfront",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "description": "We deploy our React Web applications using S3+Cloudfront for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1762328588/Replace+Elastic+BeanStalk+infrastructure"
     }
 ]
