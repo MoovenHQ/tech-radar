@@ -56,6 +56,13 @@
         "description": "We wish to heavily use visual regression testing as a technique and have chosen Chromatic and Storybook as tooling to support this: https://mooven.atlassian.net/wiki/spaces/MT/pages/1812365319/UI+Testing+Strategy"
     },
     {
+        "name": "OpenAPI spec for REST services",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "description": "In order to assist with client SDK generation and to assist the use of a common inter-domain language, we want to trial every service publishing an Open API specification for their endpoints. See: https://swagger.io/specification/. New REST services should trial this approach, and if we are adding new endpoints to existing services we should also consider trialling this approach"
+    },
+    {
         "name": "Use low-code tooling for Admin functionality",
         "ring": "assess",
         "quadrant": "tools",
