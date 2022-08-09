@@ -35,6 +35,13 @@
         "description": "To assist in managing blast radius and providing flexibility to product managers and marketers so they can run early access programmes and determine release strategy we have adopted feature flags as a technique: https://mooven.atlassian.net/wiki/spaces/MT/pages/1717502138/Implement+feature+flags+in+the+platform+and+portal"
     },
     {
+        "name": "S3 + Cloudfront",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "description": "We deploy our React Web applications using S3+Cloudfront for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1762328588/Replace+Elastic+BeanStalk+infrastructure"
+    },
+    {
         "name": "Playwright for E2E testing",
         "ring": "trial",
         "quadrant": "tools",
@@ -75,12 +82,5 @@
         "quadrant": "platforms",
         "isNew": "FALSE",
         "description": "Elastic Beanstalk has been replaced by S3+Cloudfront as our front-end hosting stack for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1762328588/Replace+Elastic+BeanStalk+infrastructure"
-    },
-    {
-        "name": "S3 + Cloudfront",
-        "ring": "adopt",
-        "quadrant": "platforms",
-        "isNew": "TRUE",
-        "description": "We deploy our React Web applications using S3+Cloudfront for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1762328588/Replace+Elastic+BeanStalk+infrastructure"
     }
 ]
