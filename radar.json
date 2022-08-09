@@ -82,5 +82,12 @@
         "quadrant": "platforms",
         "isNew": "FALSE",
         "description": "Elastic Beanstalk has been replaced by S3+Cloudfront as our front-end hosting stack for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1762328588/Replace+Elastic+BeanStalk+infrastructure"
+    },
+    {
+        "name": "Cross service db table access",
+        "ring": "hold",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "description": "In order to successfully utilise domains as a way to encapsulate system complexity and to support independent units of scale and failure- we want to avoid Service A from directly accessing the data tables which are owned by Service B. Data must instead be obtained through published service contracts. New services must not use cross-service data access, and we will actively look for opportunities to remove this from existing services. For example, when doing significant development work on a service- we should consider refactoring to use service calls instead of direct db access"
     }
 ]
