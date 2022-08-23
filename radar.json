@@ -49,6 +49,13 @@
         "description": "We use declarative infrastructure as code and use CDK as the platform to achieve this for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1720549389/Use+declarative+infrastructure+as+code"
     },
     {
+        "name": "snyk",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "description": "We want to 'shift left' security by utilising static code  analysis. We have adopted snyk for that purpose and should have code and depedency vulnerability scanning in our CI pipelines. Pipelines should fail on high or critical rated vulnerabilities. For repositories that have a number of existing  vulnerabilities that prevent this- there must be an active plan to resolve them to achieve this pipeline blocking state"
+    },
+    {
         "name": "CDKT for Terraform",
         "ring": "trial",
         "quadrant": "tools",
