@@ -53,7 +53,7 @@
         "ring": "adopt",
         "quadrant": "tools",
         "isNew": "TRUE",
-        "description": "We want to 'shift left' security by utilising static code  analysis. We have adopted snyk for that purpose and should have code and depedency vulnerability scanning in our CI pipelines. Pipelines should fail on high or critical rated vulnerabilities. For repositories that have a number of existing  vulnerabilities that prevent this- there must be an active plan to resolve them to achieve this pipeline blocking state"
+        "description": "We want to 'shift left' security by utilising static code analysis. We have adopted snyk for that purpose and should have code and depedency vulnerability scanning in our CI pipelines. Pipelines should fail on high or critical rated vulnerabilities. For repositories that have a number of existing  vulnerabilities that prevent this- there must be an active plan to resolve them to achieve this pipeline blocking state"
     },
     {
         "name": "CDKT for Terraform",
