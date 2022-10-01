@@ -131,5 +131,26 @@
         "quadrant": "platforms",
         "isNew": "FALSE",
         "description": "Due to our adoption of CDK as our IaC platform and its ecosystem we are actively replacing serverless deployments with CDK"
+    },
+    {
+        "name": "ESLint",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "description": "ESLint provides a flexible way for us to enforce agreed-upon stylistic rules. TypeScript's standard lib is very wide, allowing for multiple ways of solving the same problem, which can lead to a lot of stylistic variance. ESLint allows us to set up boundaries to avoid this issue and promote consistency. We want to maintain a separate set of rules for FE & BE based applications."
+    },
+    {
+        "name": "Prettier",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "description": "We  want to offload code formatting to a tool to enforce consistency and allow us to focus on business logic & implementation details during code reviews. Prettier is the best-in-class tool for the job in the JS/TS ecosystem."
+    },
+    {
+        "name": "Husky",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "description": "Husky allows us to easily hook into native Git hooks in the JavaScript/TypeScript ecosystem, and is most often used to write pre-commit hooks to ensure the validity of a commit. Any JS/TS project should set up a pre-commit hook to at least run compile, lint, and format checks, possibly also including unit tests if they are relatively quick."
     }
 ]
