@@ -84,6 +84,13 @@
         "description": "We wish to heavily use visual regression testing as a technique and have chosen Chromatic and Storybook as tooling to support this: https://mooven.atlassian.net/wiki/spaces/MT/pages/1812365319/UI+Testing+Strategy"
     },
     {
+        "name": "Renovate bot",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "description": "To reduce the amount of regular manual toil required to keep our dependencies up to date we want to trial Renovate bot. We are encouraging devs to add the Renovate bot to their repos as part of this trial: https://mooven.atlassian.net/wiki/spaces/MT/pages/1935147022/Adding+the+Renovate+bot+to+a+repo"
+    },
+    {
         "name": "OpenAPI spec for REST services",
         "ring": "trial",
         "quadrant": "techniques",
