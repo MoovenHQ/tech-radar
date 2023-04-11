@@ -53,7 +53,7 @@
         "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
-        "description": "We want to 'shift left' security by utilising static code analysis and detect potentially problematic open source licenses in our dependencies when running our CI pipelines. We are trialling the sandworm-audit project https://sandworm.dev/ for this purpose which can run on every push without adding cost. Snyk previously provided this for us but is a potentially expensive alternative"
+        "description": "We want to 'shift left' security by utilising static code analysis and detect potentially problematic open source licenses in our dependencies when running our CI pipelines. We are trialling the sandworm-audit project https://sandworm.dev/ for this purpose which can run on every push without adding cost. Snyk previously provided this for us but is a potentially expensive alternative. Github Code scanning is also an alterative, but is also paid for private repos."
     },
     {
         "name": "snyk",
