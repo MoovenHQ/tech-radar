@@ -14,11 +14,18 @@
         "description": "Complementing our adoption with TypeScript, the fact we don't have very high performance/throughput considerations, and influenced by the fact that front-end developers could more easily contribute to Node.js+TypeScript code bases: we have adopted Node.js for backend services. \n This means any new services should be written in Node.js"
     },
     {
-        "name": "Bitbucket pipelines",
+        "name": "Github Actions",
         "ring": "adopt",
         "quadrant": "platforms",
+        "isNew": "TRUE",
+        "description": "We feel CI tools which are integrated with our source control are a superior developer experience and Github Actions are a more composable solution with a stronger eco-system than Bitbucket Pipelines. We are migrating repositories from Bitbucket to Github and using Github Actions"
+    },
+    {
+        "name": "Bitbucket pipelines",
+        "ring": "hold",
+        "quadrant": "platforms",
         "isNew": "FALSE",
-        "description": "We feel CI tools which are integrated with our source control are a superior developer experience (as developers do not need to authenticate into the AWS console for pipeline visibility) we have moved to adopt Bitbucket pipelines. We are actively replacing any Codebuild pipelines with Bitbucket pipeline equivalents"
+        "description": "We feel CI tools which are integrated with our source control are a superior developer experience (as developers do not need to authenticate into the AWS console for pipeline visibility) we moved to adopt Bitbucket pipelines, actively replacing any Codebuild pipelines with Bitbucket pipeline equivalents. Bitbucket pipelines has since been superceded by Github Actions"
     },
     {
         "name": "Feature leading",
@@ -98,10 +105,17 @@
         "description": "We wish to heavily use visual regression testing as a technique https://mooven.atlassian.net/wiki/spaces/MT/pages/1812365319/UI+Testing+Strategy. After trialling Storybook + Chromatic we have switched to Ladel.dev due to performance reasons"
     },
     {
-        "name": "Renovate bot",
+        "name": "Github dependabot",
         "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
+        "description": "To reduce the amount of regular manual toil required to keep our dependencies up to date we want to trial Github dependabot"
+    },
+    {
+        "name": "Renovate bot",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "FALSE",
         "description": "To reduce the amount of regular manual toil required to keep our dependencies up to date we want to trial Renovate bot. We are encouraging devs to add the Renovate bot to their repos as part of this trial: https://mooven.atlassian.net/wiki/spaces/MT/pages/1935147022/Adding+the+Renovate+bot+to+a+repo"
     },
     {
@@ -130,7 +144,7 @@
         "ring": "hold",
         "quadrant": "platforms",
         "isNew": "FALSE",
-        "description": "Because of our adoption of a CI-in-source-control tools (in our case, Bitbucket pipelines) we are actively replacing any Codebuild pipelines with Bitbucket pipeline equivalents"
+        "description": "Because of our adoption of a CI-in-source-control tools (in our case, Github Actitons) we are actively replaced Codebuild pipelines with Bitbucket pipeline equivalents, which have since been replaced with Github Actions"
     },
     {
         "name": "AWS Elastic Beanstalk",
