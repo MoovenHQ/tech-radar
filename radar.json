@@ -78,10 +78,17 @@
     },
     {
         "name": "Chromatic + Storybook",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "description": "We wish to heavily use visual regression testing as a technique and have chosen to trial Chromatic and Storybook as tooling to support this: https://mooven.atlassian.net/wiki/spaces/MT/pages/1812365319/UI+Testing+Strategy. After a trial period we decided to trial Ladel.dev instead"
+    },
+    {
+        "name": "Ladel.dev",
         "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
-        "description": "We wish to heavily use visual regression testing as a technique and have chosen Chromatic and Storybook as tooling to support this: https://mooven.atlassian.net/wiki/spaces/MT/pages/1812365319/UI+Testing+Strategy"
+        "description": "We wish to heavily use visual regression testing as a technique https://mooven.atlassian.net/wiki/spaces/MT/pages/1812365319/UI+Testing+Strategy. After trialling Storybook + Chromatic we have switched to Ladel.dev due to performance reasons"
     },
     {
         "name": "Renovate bot",
