@@ -49,14 +49,21 @@
         "description": "We use declarative infrastructure as code and use CDK as the platform to achieve this for the reasons outlined on this Wiki page: https://mooven.atlassian.net/wiki/spaces/MT/pages/1720549389/Use+declarative+infrastructure+as+code"
     },
     {
-        "name": "snyk",
-        "ring": "adopt",
+        "name": "sandworm-audit",
+        "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
-        "description": "We want to 'shift left' security by utilising static code analysis. We have adopted snyk for that purpose and should have code and depedency vulnerability scanning in our CI pipelines. Pipelines should fail on high or critical rated vulnerabilities. For repositories that have a number of existing  vulnerabilities that prevent this- there must be an active plan to resolve them to achieve this pipeline blocking state"
+        "description": "We want to 'shift left' security by utilising static code analysis and detect potentially problematic open source licenses in our dependencies when running our CI pipelines. We are trialling the sandworm-audit project https://sandworm.dev/ for this purpose which can run on every push, covering our Javascript code without adding cost. Snyk previously provided this for us, and included support for Maven but is a potentially expensive alternative. Github Code scanning is also an alterative, but is also paid for private repos."
     },
     {
-        "name": "CDKT for Terraform",
+        "name": "snyk",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "description": "We want to 'shift left' security by utilising static code analysis. We adopted snyk for that purpose and should have code and depedency vulnerability scanning in our CI pipelines. Pipelines should fail on high or critical rated vulnerabilities. For repositories that have a number of existing  vulnerabilities that prevent this- there must be an active plan to resolve them to achieve this pipeline blocking state. We are trialling the open source tool sandworm-audit as a replacement for Snyk"
+    },
+    {
+        "name": "CDK for Terraform",
         "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
