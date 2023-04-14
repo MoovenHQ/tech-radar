@@ -155,9 +155,23 @@
     },
     {
         "name": "Husky",
-        "ring": "adopt",
+        "ring": "hold",
         "quadrant": "tools",
         "isNew": "FALSE",
-        "description": "Husky allows us to easily hook into native Git hooks in the JavaScript/TypeScript ecosystem, and is most often used to write pre-commit hooks to ensure the validity of a commit. Any JS/TS project should set up a pre-commit hook to at least run compile, lint, and format checks, possibly also including unit tests if they are relatively quick."
+        "description": "Husky allows us to easily hook into native Git hooks in the JavaScript/TypeScript ecosystem, and is most often used to write pre-commit hooks to ensure the validity of a commit. However utilising a monorepo the tasks that Husky was used for now take too long to run outside CI."
+    },
+    {
+        "name": "Monorepo",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "description": "In order to make it easier to re-use libraries and common patterns, and maximise the benefits from our CI security, linting and testing tooling we are trialling a Monorepo as preferred over a repo per service"
+    },
+    {
+        "name": "Turborepo",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "description": "In order to speed up the volumes of formatting, linting and unit testing in a monorepo, we are utilising Turbo and it's remote cache to speed these tasks"
     }
 ]
