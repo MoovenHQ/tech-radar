@@ -6,7 +6,7 @@ The [Mooven](https://www.mooven.com) Technology radar is an implementation of th
 
 ## Purpose
 
-The purpose of [Mooven's Technology radar](https://radar.thoughtworks.com/?sheetId=https://raw.githubusercontent.com/MoovenHQ/tech-radar/main/radar.json) is provide structure and understandability to our process of experimenting with, adopting, and sunsetting techniques, tools, platforms and languages.
+The purpose of [Mooven's Technology radar]([https://radar.thoughtworks.com/?sheetId=https://raw.githubusercontent.com/MoovenHQ/tech-radar/main/radar.json](https://radar.thoughtworks.com/?documentId=https%3A%2F%2Fraw.githubusercontent.com%2FMoovenHQ%2Ftech-radar%2Fmain%2Fradar.json)) is provide structure and understandability to our process of experimenting with, adopting, and sunsetting techniques, tools, platforms and languages.
 
 It is expected that our day to day design decisions are consistent with the guidance provided by the radar so that we evolve our code-base and our practices towards the future state we desire.
 
